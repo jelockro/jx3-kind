@@ -1,0 +1,11 @@
+# Source: metallb/templates/controller-sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  labels:
+    app: metallb
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: controller
+  namespace: metallb-system
+  annotations:
+    meta.helm.sh/release-name: 'metallb'

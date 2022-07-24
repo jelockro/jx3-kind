@@ -1,0 +1,18 @@
+# Source: metallb/templates/pod-lister-rb.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  labels:
+    app: metallb
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: pod-lister
+  namespace: metallb-system
+  annotations:
+    meta.helm.sh/release-name: 'metallb'
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: pod-lister
+subjects:
+  - kind: ServiceAccount
+    name: speaker

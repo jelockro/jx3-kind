@@ -12,6 +12,67 @@
     </tr>
   </thead>
   <tbody>
+    <tr>
+		      <td colspan='5'><h3>jx</h3></td>
+		    </tr>
+	    <tr>
+	      <td>jxboot-helmfile-resources</td>
+	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources' title='A Helm chart for the resources for JX Boot'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jxboot-helmfile-resources </a></td>
+	      <td>1.1.168</td>
+	      <td></td>
+	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources'>source</a></td>
+	    </tr>
+    <tr>
+	      <td>jx-preview</td>
+	      <td><a href='https://github.com/jenkins-x-plugins/jx-preview' title='This chart installs the jx-preview CRD and garbagecollection job '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-preview </a></td>
+	      <td>0.0.220</td>
+	      <td></td>
+	      <td><a href='https://github.com/jenkins-x-plugins/jx-preview'>source</a></td>
+	    </tr>
+    <tr>
+	      <td>lighthouse</td>
+	      <td><a href='https://github.com/jenkins-x/lighthouse' title='This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse). '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> lighthouse </a></td>
+	      <td>1.7.4</td>
+	      <td></td>
+	      <td><a href='https://github.com/jenkins-x/lighthouse'>source</a></td>
+	    </tr>
+    <tr>
+	      <td>jx-build-controller</td>
+	      <td><a href='https://jenkins-x.io/' title='Jenkins X next gen cloud CI / CD platform for Kubernetes'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-build-controller </a></td>
+	      <td>0.4.0</td>
+	      <td></td>
+	      <td><a href='https://jenkins-x.io/'>source</a></td>
+	    </tr>
+    <tr>
+		      <td colspan='5'><h3>metallb-system</h3></td>
+		    </tr>
+	    <tr>
+	      <td>metallb</td>
+	      <td><a href='https://github.com/jenkins-x-charts/metallb' title='A Helm chart for Tekton Pipelines'> <img src='https://raw.githubusercontent.com/metallb/metallb/main/website/static/images/logo/metallb-blue.png' width='24px' height='24px'> metallb </a></td>
+	      <td>0.0.1</td>
+	      <td></td>
+	      <td><a href='https://github.com/jenkins-x-charts/metallb'>source</a></td>
+	    </tr>
+    <tr>
+		      <td colspan='5'><h3>nginx</h3></td>
+		    </tr>
+	    <tr>
+	      <td>nginx-ingress</td>
+	      <td><a href='https://github.com/kubernetes/ingress-nginx' title='Ingress controller for Kubernetes using NGINX as a reverse proxy and load balancer'> <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png' width='24px' height='24px'> ingress-nginx </a></td>
+	      <td>4.1.0</td>
+	      <td></td>
+	      <td><a href='https://github.com/kubernetes/ingress-nginx'>source</a></td>
+	    </tr>
+    <tr>
+		      <td colspan='5'><h3>tekton-pipelines</h3></td>
+		    </tr>
+	    <tr>
+	      <td>tekton-pipeline</td>
+	      <td><a href='https://github.com/cdfoundation/tekton-helm-chart' title='A Helm chart for Tekton Pipelines'> <img src='https://avatars2.githubusercontent.com/u/47602533' width='24px' height='24px'> tekton-pipeline </a></td>
+	      <td>0.29.0</td>
+	      <td></td>
+	      <td><a href='https://github.com/cdfoundation/tekton-helm-chart'>source</a></td>
+	    </tr>
 
   </tbody>
 </table>

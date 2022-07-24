@@ -1,0 +1,43 @@
+# Source: metallb/templates/metallb-system-speaker-clusterrole.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app: metallb
+    gitops.jenkins-x.io/pipeline: 'cluster'
+  name: metallb-system:speaker
+  annotations:
+    meta.helm.sh/release-name: 'metallb'
+rules:
+  - apiGroups:
+      - ''
+    resources:
+      - services
+      - endpoints
+      - nodes
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups: ["discovery.k8s.io"]
+    resources:
+      - endpointslices
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups:
+      - ''
+    resources:
+      - events
+    verbs:
+      - create
+      - patch
+  - apiGroups:
+      - policy
+    resourceNames:
+      - speaker
+    resources:
+      - podsecuritypolicies
+    verbs:
+      - use

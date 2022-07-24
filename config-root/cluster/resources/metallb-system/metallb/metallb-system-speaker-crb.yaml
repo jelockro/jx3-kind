@@ -1,0 +1,18 @@
+# Source: metallb/templates/metallb-system-speaker-crb.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  labels:
+    app: metallb
+    gitops.jenkins-x.io/pipeline: 'cluster'
+  name: metallb-system:speaker
+  annotations:
+    meta.helm.sh/release-name: 'metallb'
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: metallb-system:speaker
+subjects:
+  - kind: ServiceAccount
+    name: speaker
+    namespace: metallb-system

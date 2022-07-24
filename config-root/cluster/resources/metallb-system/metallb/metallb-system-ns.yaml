@@ -1,0 +1,11 @@
+# Source: metallb/templates/metallb-system-ns.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: metallb-system
+  labels:
+    app: metallb
+    gitops.jenkins-x.io/pipeline: 'cluster'
+    team: 'jx'
+  annotations:
+    meta.helm.sh/release-name: 'metallb'
